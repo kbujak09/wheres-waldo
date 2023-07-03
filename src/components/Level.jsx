@@ -76,7 +76,7 @@ const Level = ({image, level}) => {
   return (
     <>
       <div className='nav'>
-        <Link to='/wheres-waldo'><div>Home</div></Link>
+        <Link to='/'><div>Home</div></Link>
         <Characters level={level} characters={characters} deleteCharacter={deleteCharacter}/>
         <Timer isOver={isOver} getTime={getTime}/>
       </div>
