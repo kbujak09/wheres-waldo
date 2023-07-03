@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  background-color: black;
+}
+.nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw;
+  align-items: center;
+  border-bottom: 2px solid black;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+  color: white;
+}
+.levels {
+  margin-top: 10vh;
+  height: 84vh;
+  display: flex;
+  padding: 4vw 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+  padding-top: 40px;
+}
+.footer {
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  font-size: 12px;
+  color: white;
+  background-color: black;
+}
+.title {
+  font-size: 40px;
+}
+.leaderboardLink {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+}
+.levelLink {
+  width: 50vh;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(214, 214, 214);
+}
+.levelLink:hover {
+  transform: scale(1.02);
+}
+.levelContent {
+  min-height: 82vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.preview {
+  width: 100%;
+  height: 100%;
+}
+.levelImage {
+  cursor: pointer;
+  width: 1400px;
+}
+.menu {
+  position: absolute;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 70px;
+}
+.wanted {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 4px 8px;
+  color: black;
+}
+.wanted:hover {
+  background-color: rgb(190, 190, 190);
+}
+.characters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.character {
+  height: 50px;
+}
+.scoreDiv {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: transparent;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+.score {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #151515;
+  color: white;
+  border-radius: 20px;
+  letter-spacing: 1.2px;
+  align-items: center;
+}
+.scoreTime {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.scoreName {
+  justify-self: center;
+}
+.scoreNameInput {
+  padding: 4px;
+}
+.scoreNameSubmit {
+  padding: 0 10px;
+  height: 20px;
+  justify-self: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
+.scoreForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.leaderboard {
+  color: white;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leaderboardTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  font-size: 28px;
+}
+.leaderboardContent {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  gap: 20px;
+}
+.record {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px 60px;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid white;
+}
+.recordName {
+  font-size: 20px;
+}
+.leaderboardBack {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 24px;
+  border: 0;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
