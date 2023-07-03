@@ -29,7 +29,7 @@ const Score = ({time}) => {
     catch {
       console.log(e);
     }
-    navigate('/')
+    navigate('/wheres-waldo')
   }
 
   return (

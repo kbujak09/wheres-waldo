@@ -24,7 +24,7 @@ const Leaderboard = () => {
      <div className='leaderboardContent'>{data.map(record => {
       return <Record time={record.time} name={record.name}/>
      })}</div>  
-     <Link to='/' className='leaderboardBack'>{'<'}</Link> 
+     <Link to='/wheres-waldo' className='leaderboardBack'>{'<'}</Link> 
     </div>
   )
 }

@@ -7,7 +7,7 @@ import Characters from './Characters';
 import getData from '../firebase'
 import Score from './Score';
 
-const Level = ({image, level, open, setOpen}) => {
+const Level = ({image, level}) => {
 
   const [ isOver, setIsOver ] = useState(false);
   const [ timeScore, setTimeScore ] = useState(0);
@@ -76,7 +76,7 @@ const Level = ({image, level, open, setOpen}) => {
   return (
     <>
       <div className='nav'>
-        <Link to='/'><div>Home</div></Link>
+        <Link to='/wheres-waldo'><div>Home</div></Link>
         <Characters level={level} characters={characters} deleteCharacter={deleteCharacter}/>
         <Timer isOver={isOver} getTime={getTime}/>
       </div>
